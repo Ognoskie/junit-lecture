@@ -35,7 +35,18 @@ public class CoffeeTest {
 		assertEquals(actualCoffee.getPrice(), 5.99, deltaValue);
 	}
 
+	@Test
+	public void testCoffeeSetters() {
+		actualCoffee.setName("The Bean-i-nator");
+		assertEquals(actualCoffee.getName(), "The Bean-i-nator");
 
+		actualCoffee.setRoast("espresso");
+		assertEquals(actualCoffee.getRoast(), "espresso");
+
+		actualCoffee.setPrice(6.49);
+		assertEquals(actualCoffee.getPrice(), 6.49, deltaValue);
+
+	}
 
 
 
